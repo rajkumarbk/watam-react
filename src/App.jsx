@@ -25,13 +25,17 @@ function ScrollToTop() {
 
 function App() {
   const [language, setLanguage] = useState(
-    () => localStorage.getItem('lang') || 'ar'  // restore on reload
+    () => localStorage.getItem('lang') || 'ar'
   );
+
+  useEffect(() => {
+    document.title = language === 'ar' ? 'السالم لزجاج السيارات' : 'AlSalem Auto Glass';
+  }, [language]);
 
   const toggleLanguage = () => {
     setLanguage(prevLang => {
       const newLang = prevLang === 'ar' ? 'en' : 'ar';
-      localStorage.setItem('lang', newLang);  // save on every toggle
+      localStorage.setItem('lang', newLang);
       return newLang;
     });
   };

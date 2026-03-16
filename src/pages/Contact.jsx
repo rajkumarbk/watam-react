@@ -76,7 +76,7 @@ const Contact = () => {
                 method="POST"
               >
                 {/* Important: Prevents spam */}
-                <input type="hidden" name="_captcha" value="true" />
+                <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="box" />
                 <input type="hidden" name="_subject" value="New Contact from AlSalem Website" />
                 <input
