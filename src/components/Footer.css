@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, var(--dark-color) 0%, #1a1e2f 100%);
+  background: linear-gradient(to top, var(--primary-green), var(--secondary-green1));
   color: white;
   padding: 10px 0 5px;
   margin-top: auto;
@@ -15,7 +15,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin-bottom: 40px;
 }
 
 .footer-section h3 {
@@ -32,7 +31,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background: var(--secondary-color);
+  background: var(--primary-gold);
 }
 
 .rtl .footer-section h3::after {
@@ -65,7 +64,7 @@
 }
 
 .social-link:hover {
-  background: var(--secondary-color);
+  background: var(--primary-gold);
   transform: translateY(-3px);
 }
 
@@ -88,7 +87,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   padding-right: 10px;
 }
 
@@ -107,7 +106,7 @@
 
 .footer-contact i,
 .footer-hours i {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   width: 20px;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .footer-bottom span {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   font-weight: 600;
 }
 

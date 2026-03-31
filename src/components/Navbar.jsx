@@ -2,9 +2,9 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LanguageContext } from '../App';
 import './Navbar.css';
-import logo from '../assets/images/header.jpeg';
+import logo from '../assets/images/header.png';
 
-<img src={logo} alt="AlSalem Logo" className="logo-img" />
+<img src={logo} alt="watam Logo" className="logo-img" />
 
 const Navbar = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);

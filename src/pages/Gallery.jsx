@@ -4,7 +4,7 @@ import './Gallery.css';
 
 const Gallery = () => {
   const { language } = useContext(LanguageContext);
-  const [activeBranch, setActiveBranch] = useState(101);
+  const [activeBranch, setActiveBranch] = useState('W01');
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -13,72 +13,72 @@ const Gallery = () => {
       title: 'معرض الصور',
       subtitle: 'تصفح صور أعمالنا في جميع الفروع',
       allBranches: 'جميع الفروع',
-      branch: 'فرع',
+      branch: 'وتم لزجاج السيارات',
       noImages: 'لا توجد صور لهذا الفرع حالياً'
     },
     en: {
       title: 'Photo Gallery',
       subtitle: 'Browse our work photos across all branches',
       allBranches: 'All Branches',
-      branch: 'Branch',
+      branch: 'Watam Auto Glass',
       noImages: 'No images available for this branch yet'
     }
   };
 
   const t = content[language];
 
-  const branches = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110];
+  const branches = ['W01', 'W02', 'W03', 'W04', 'W05', 'W06', 'W07', 'W08', 'W09', 'W10'];
 
   const galleryImages = {
-    101: [
-      { id: 1, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 1 للفرع 101", en: "Image 1 for Branch 101" }, branch: 101 },
-      { id: 2, url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600", title: { ar: "صورة 2 للفرع 101", en: "Image 2 for Branch 101" }, branch: 101 },
-      { id: 3, url: "https://images.unsplash.com/photo-1590650046871-92c887180603?w=600", title: { ar: "صورة 3 للفرع 101", en: "Image 3 for Branch 101" }, branch: 101 }
+    W01: [
+      { id: 1, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 1 للفرع W01", en: "Image 1 for Branch W01" }, branch: "W01" },
+      { id: 2, url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600", title: { ar: "صورة 2 للفرع W01", en: "Image 2 for Branch W01" }, branch: "W01" },
+      { id: 3, url: "https://images.unsplash.com/photo-1590650046871-92c887180603?w=600", title: { ar: "صورة 3 للفرع W01", en: "Image 3 for Branch W01" }, branch: "W01" }
     ],
-    102: [
-      { id: 1, url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600", title: { ar: "صورة 1 للفرع 102", en: "Image 1 for Branch 102" }, branch: 102 },
-      { id: 2, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 2 للفرع 102", en: "Image 2 for Branch 102" }, branch: 102 },
-      { id: 3, url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600", title: { ar: "صورة 3 للفرع 102", en: "Image 3 for Branch 102" }, branch: 102 }
+    W02: [
+      { id: 1, url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600", title: { ar: "صورة 1 للفرع W02", en: "Image 1 for Branch W02" }, branch: "W02" },
+      { id: 2, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 2 للفرع W02", en: "Image 2 for Branch W02" }, branch: "W02" },
+      { id: 3, url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600", title: { ar: "صورة 3 للفرع W02", en: "Image 3 for Branch W02" }, branch: "W02" }
     ],
-    103: [
-      { id: 1, url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600", title: { ar: "صورة 1 للفرع 103", en: "Image 1 for Branch 103" }, branch: 103 },
-      { id: 2, url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600", title: { ar: "صورة 2 للفرع 103", en: "Image 2 for Branch 103" }, branch: 103 },
-      { id: 3, url: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600", title: { ar: "صورة 3 للفرع 103", en: "Image 3 for Branch 103" }, branch: 103 }
+    W03: [
+      { id: 1, url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600", title: { ar: "صورة 1 للفرع W03", en: "Image 1 for Branch W03" }, branch: "W03" },
+      { id: 2, url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600", title: { ar: "صورة 2 للفرع W03", en: "Image 2 for Branch W03" }, branch: "W03" },
+      { id: 3, url: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600", title: { ar: "صورة 3 للفرع W03", en: "Image 3 for Branch W03" }, branch: "W03" }
     ],
-    104: [
-      { id: 1, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 1 للفرع 104", en: "Image 1 for Branch 104" }, branch: 104 },
-      { id: 2, url: "https://images.unsplash.com/photo-1581092919535-7146ff1a5904?w=600", title: { ar: "صورة 2 للفرع 104", en: "Image 2 for Branch 104" }, branch: 104 },
-      { id: 3, url: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600", title: { ar: "صورة 3 للفرع 104", en: "Image 3 for Branch 104" }, branch: 104 }
+    W04: [
+      { id: 1, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 1 للفرع W04", en: "Image 1 for Branch W04" }, branch: "W04" },
+      { id: 2, url: "https://images.unsplash.com/photo-1581092919535-7146ff1a5904?w=600", title: { ar: "صورة 2 للفرع W04", en: "Image 2 for Branch W04" }, branch: "W04" },
+      { id: 3, url: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600", title: { ar: "صورة 3 للفرع W04", en: "Image 3 for Branch W04" }, branch: "W04" }
     ],
-    105: [
-      { id: 1, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 1 للفرع 105", en: "Image 1 for Branch 105" }, branch: 105 },
-      { id: 2, url: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600", title: { ar: "صورة 2 للفرع 105", en: "Image 2 for Branch 105" }, branch: 105 },
-      { id: 3, url: "https://images.unsplash.com/photo-1541976590-713941681591?w=600", title: { ar: "صورة 3 للفرع 105", en: "Image 3 for Branch 105" }, branch: 105 }
+    W05: [
+      { id: 1, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 1 للفرع W05", en: "Image 1 for Branch W05" }, branch: "W05" },
+      { id: 2, url: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600", title: { ar: "صورة 2 للفرع W05", en: "Image 2 for Branch W05" }, branch: "W05" },
+      { id: 3, url: "https://images.unsplash.com/photo-1541976590-713941681591?w=600", title: { ar: "صورة 3 للفرع W05", en: "Image 3 for Branch W05" }, branch: "W05" }
     ],
-    106: [
-      { id: 1, url: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=600", title: { ar: "صورة 1 للفرع 106", en: "Image 1 for Branch 106" }, branch: 106 },
-      { id: 2, url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600", title: { ar: "صورة 2 للفرع 106", en: "Image 2 for Branch 106" }, branch: 106 },
-      { id: 3, url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600", title: { ar: "صورة 3 للفرع 106", en: "Image 3 for Branch 106" }, branch: 106 }
+    W06: [
+      { id: 1, url: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=600", title: { ar: "صورة 1 للفرع W06", en: "Image 1 for Branch W06" }, branch: "W06" },
+      { id: 2, url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600", title: { ar: "صورة 2 للفرع W06", en: "Image 2 for Branch W06" }, branch: "W06" },
+      { id: 3, url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600", title: { ar: "صورة 3 للفرع W06", en: "Image 3 for Branch W06" }, branch: "W06" }
     ],
-    107: [
-      { id: 1, url: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600", title: { ar: "صورة 1 للفرع 107", en: "Image 1 for Branch 107" }, branch: 107 },
-      { id: 2, url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600", title: { ar: "صورة 2 للفرع 107", en: "Image 2 for Branch 107" }, branch: 107 },
-      { id: 3, url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=600", title: { ar: "صورة 3 للفرع 107", en: "Image 3 for Branch 107" }, branch: 107 }
+    W07: [
+      { id: 1, url: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600", title: { ar: "صورة 1 للفرع W07", en: "Image 1 for Branch W07" }, branch: "W07" },
+      { id: 2, url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600", title: { ar: "صورة 2 للفرع W07", en: "Image 2 for Branch W07" }, branch: "W07" },
+      { id: 3, url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=600", title: { ar: "صورة 3 للفرع W07", en: "Image 3 for Branch W07" }, branch: "W07" }
     ],
-    108: [
-      { id: 1, url: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600", title: { ar: "صورة 1 للفرع 108", en: "Image 1 for Branch 108" }, branch: 108 },
-      { id: 2, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 2 للفرع 108", en: "Image 2 for Branch 108" }, branch: 108 },
-      { id: 3, url: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600", title: { ar: "صورة 3 للفرع 108", en: "Image 3 for Branch 108" }, branch: 108 }
+    W08: [
+      { id: 1, url: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600", title: { ar: "صورة 1 للفرع W08", en: "Image 1 for Branch W08" }, branch: "W08" },
+      { id: 2, url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600", title: { ar: "صورة 2 للفرع W08", en: "Image 2 for Branch W08" }, branch: "W08" },
+      { id: 3, url: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600", title: { ar: "صورة 3 للفرع W08", en: "Image 3 for Branch W08" }, branch: "W08" }
     ],
-    109: [
-      { id: 1, url: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600", title: { ar: "صورة 1 للفرع 109", en: "Image 1 for Branch 109" }, branch: 109 },
-      { id: 2, url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600", title: { ar: "صورة 2 للفرع 109", en: "Image 2 for Branch 109" }, branch: 109 },
-      { id: 3, url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600", title: { ar: "صورة 3 للفرع 109", en: "Image 3 for Branch 109" }, branch: 109 }
+    W09: [
+      { id: 1, url: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600", title: { ar: "صورة 1 للفرع W09", en: "Image 1 for Branch W09" }, branch: "W09" },
+      { id: 2, url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600", title: { ar: "صورة 2 للفرع W09", en: "Image 2 for Branch W09" }, branch: "W09" },
+      { id: 3, url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600", title: { ar: "صورة 3 للفرع W09", en: "Image 3 for Branch W09" }, branch: "W09" }
     ],
-    110: [
-      { id: 1, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 1 للفرع 110", en: "Image 1 for Branch 110" }, branch: 110 },
-      { id: 2, url: "https://images.unsplash.com/photo-1590650046871-92c887180603?w=600", title: { ar: "صورة 2 للفرع 110", en: "Image 2 for Branch 110" }, branch: 110 },
-      { id: 3, url: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600", title: { ar: "صورة 3 للفرع 110", en: "Image 3 for Branch 110" }, branch: 110 }
+    W10: [
+      { id: 1, url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", title: { ar: "صورة 1 للفرع W10", en: "Image 1 for Branch W10" }, branch: "W10" },
+      { id: 2, url: "https://images.unsplash.com/photo-1590650046871-92c887180603?w=600", title: { ar: "صورة 2 للفرع W10", en: "Image 2 for Branch W10" }, branch: "W10" },
+      { id: 3, url: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600", title: { ar: "صورة 3 للفرع W10", en: "Image 3 for Branch W10" }, branch: "W10" }
     ]
   };
 

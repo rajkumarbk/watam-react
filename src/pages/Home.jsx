@@ -7,7 +7,7 @@ const Home = () => {
 
   const content = {
     ar: {
-      heroTitle: 'السالم لإنجاح السيارة',
+      heroTitle: 'وتم لزجاج السيارات',
       heroSubtitle: 'خبرة وجودة في زجاج السيارات منذ أكثر من 20 عاماً',
       ctaButton: 'اتصل بنا الآن',
       servicesTitle: 'خدماتنا المتميزة',
@@ -51,8 +51,8 @@ const Home = () => {
       ]
     },
     en: {
-      heroTitle: 'AlSalem Auto Glass',
-      heroSubtitle: 'Experience and Quality in Auto Glass for Over 20 Years',
+      heroTitle: 'Watam Auto Glass',
+      heroSubtitle: 'Experience and Quality in Auto Glass',
       ctaButton: 'Contact Us Now',
       servicesTitle: 'Our Premium Services',
       servicesSubtitle: 'We provide the best auto glass services in the kingdom',
@@ -67,7 +67,7 @@ const Home = () => {
         },
         {
           title: 'Extended Warranty',
-          description: 'Up to 5 years warranty on all services'
+          description: 'Up to 6 months of warranty on all services'
         },
         {
           title: 'Competitive Prices',
@@ -77,20 +77,28 @@ const Home = () => {
       faqTitle: 'Frequently Asked Questions',
       faqs: [
         {
-          question: 'What types of glass are available?',
-          answer: 'We provide all types of auto glass (front, rear, side) for all models'
+          question: 'What types of car glass services do you offer?',
+          answer: 'We provide comprehensive solutions that include replacing all sides of car glass, including the front, side, and rear windows, using high-quality glass that meets the original vehicle specifications.'
         },
         {
-          question: 'How long does glass installation take?',
-          answer: 'Glass installation takes 1-2 hours depending on the car model'
+          question: 'Do you offer mobile services outside the workshop?',
+          answer: 'Yes, we provide a mobile service that allows customers to have repairs or replacements carried out at their home, workplace, or any preferred location.'
         },
         {
-          question: 'Do you provide delivery service?',
-          answer: 'Yes, we provide delivery and on-site installation service'
+          question: 'How long does it take to replace the front glass?',
+          answer: 'Replacing the front glass usually takes between one and two hours, depending on the vehicle type and the glass required.'
         },
         {
-          question: 'What is the warranty period?',
-          answer: 'We provide 5 years warranty on installation and 1 year on glass'
+          question: 'Is a prior appointment required to receive the service?',
+          answer: 'We recommend booking an appointment to ensure quick service and avoid waiting, but we also welcome customers without appointments at the workshop. For mobile services, prior coordination by phone is recommended to set the time and location.'
+        },
+        {
+          question: 'What types of vehicles are covered by your services?',
+          answer: 'Our services cover all types of vehicles, including small cars, SUVs, trucks, and light trucks.'
+        },
+        {
+          question: 'Do you provide a warranty on glass services?',
+          answer: ' Yes, we provide a warranty on glass services, adhering to the highest standards of quality and durability to ensure safety and clarity while driving.'
         }
       ]
     }
@@ -102,12 +110,12 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-overlay"></div>
+        {/* <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">{t.heroTitle}</h1>
           <p className="hero-subtitle">{t.heroSubtitle}</p>
-          {/* <button className="btn btn-primary hero-btn">{t.ctaButton}</button> */}
-        </div>
+          <button className="btn btn-primary hero-btn">{t.ctaButton}</button>
+        </div> */}
       </section>
 
       {/* Features Section */}
@@ -139,7 +147,7 @@ const Home = () => {
             {t.faqs.map((faq, index) => (
               <div key={index} className="faq-item">
                 <div className="faq-question">
-                  <i className="fas fa-question-circle"></i>
+                  {/* <i className="fas fa-star"></i> */}
                   <h3>{faq.question}</h3>
                 </div>
                 <p className="faq-answer">{faq.answer}</p>

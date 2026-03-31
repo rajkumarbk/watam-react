@@ -11,7 +11,7 @@ const About = () => {
       subtitle: 'نحو مستقبل أكثر أماناً لسيارتك',
       story: {
         title: 'قصتنا',
-        content: 'تأسست شركة السالم لإنجاح السيارة عام 2000، ومنذ ذلك الحين ونحن نقدم أفضل خدمات زجاج السيارات في المملكة العربية السعودية. بدأنا كورشة صغيرة في الرياض واليوم لدينا 10 فروع في جميع أنحاء المملكة.'
+        content: 'في عام 2020 نشأة فكرة مراكز تقديم خدمات تركيب وصيانة زجاج السيارات ومنها بدأنا في رحلة الدراسة والبحث في مجال زجاج السيارات وفي أوائل عام 2021 قمنا بمقابلة عدد من الخبراء في هذا المجال وزرنا عدد من المصانع والموردين كما قمنا بقراءة العديد من الدراسات والتقارير حول تطورات هذا المجال في السوق المحلي والعالمي، وفي منتصف عام 2021 بدأنا على تطوير خطة شاملة وبدأت رحلة اختيار الاسم التجاري وكنا حريصون على ان يكون اسماً عربياً، ثم جاءت فكرة (وتم) وكان هذا اسم يجمع بين البساطة والوضوح ويعكس هوية الشركة ويلائم رؤيتنا، فـ (وتم) ماضٍ لفعل تم ليكون أيضاً نداء العلامة هو (وتم بكل دقة) فكان افتتاح أول مراكزنا في تاريخ 1/1/2022.'
       },
       mission: {
         title: 'رسالتنا',
@@ -39,18 +39,18 @@ const About = () => {
     },
     en: {
       title: 'About Us',
-      subtitle: 'Towards a safer future for your car',
+      subtitle: 'A Saudi based company specialized in automotive glass installation and maintenance services.',
       story: {
         title: 'Our Story',
-        content: 'AlSalem Auto Glass was established in 2000, and since then we have been providing the best auto glass services in Saudi Arabia. We started as a small workshop in Riyadh and today we have 10 branches across the kingdom.'
+        content: 'In 2020, the idea of establishing service centers for installation and maintenance of automotive glass was born. That marked the beginning of our journey of research and study in the field of automotive glass. In early 2021, we met with several experts in this field and visited a number of factories and suppliers. We also reviewed numerous studies and reports on the developments in this industry both locally and globally. By mid-2021, we began developing a comprehensive plan and started the journey of choosing brand name. We were keen to choose an Arabic name, which led us to the idea of "Watam" a name that combines simplicity and clarity, reflects the companys identity and aligns with our vision. "Watam" comes from the past tense verb "Tam" meaning "completed" and also serves as a precise and impactful brand call: Watam with precision.'
       },
       mission: {
         title: 'Our Mission',
-        content: 'Providing the best auto glass services with high quality and competitive prices, ensuring customer satisfaction and safety.'
+        content: 'To be one of the top providers of automotive glass installation and maintenance services.'
       },
       vision: {
-        title: 'Our Vision',
-        content: 'To be the first choice for auto glass services in the kingdom and the region, through continuous innovation and service development.'
+        title: 'Our Goal',
+        content: 'To build customer trust and expand our services across all regions of our country. We aim to establish long-term relationships with our customers through commitment, quality, and staying up to date with technological advancements in the automotive glass field '
       },
       values: {
         title: 'Our Values',
@@ -89,7 +89,7 @@ const About = () => {
               <p>{t.story.content}</p>
             </div>
             <div className="story-image">
-              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600" alt="Our Story" />
+              <img src="../src/assets/images/about.jpg" alt="Our Story" />
             </div>
           </div>
         </div>
@@ -128,11 +128,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section stats-section">
+      {/* <section className="section stats-section">
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">20+</span>
+              <span className="stat-number">5+</span>
               <span className="stat-label">{t.stats.years}</span>
             </div>
             <div className="stat-item">
@@ -140,7 +140,7 @@ const About = () => {
               <span className="stat-label">{t.stats.branches}</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">50k+</span>
+              <span className="stat-number">10k+</span>
               <span className="stat-label">{t.stats.clients}</span>
             </div>
             <div className="stat-item">
@@ -149,7 +149,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

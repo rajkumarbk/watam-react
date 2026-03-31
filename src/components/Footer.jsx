@@ -17,8 +17,8 @@ const Footer = () => {
       gallery: 'معرض الصور',
       contact: 'اتصل بنا',
       contactInfo: 'معلومات الاتصال',
-      phone: '٩٦٦٥٥٥٥٥٥٥٥٥+',
-      email: 'info@alsalem.com',
+      phone: '+٩٦٦ ٥٠٥ ٢٨٢ ٩٥٥',
+      email: 'info@watamglass.com',
       address: 'الرياض، المملكة العربية السعودية',
       hours: 'ساعات العمل',
       weekdays: 'السبت - الخميس: ٩ص - ٩م',
@@ -27,7 +27,7 @@ const Footer = () => {
       rights: 'جميع الحقوق محفوظة',
     },
     en: {
-      aboutText: 'Leading auto glass company with over 20 years of experience in the Saudi market',
+      aboutText: 'Leading auto glass company with over 5 years of experience in the Saudi market.',
       quickLinks: 'Quick Links',
       home: 'Home',
       about: 'About Us',
@@ -36,8 +36,8 @@ const Footer = () => {
       gallery: 'Gallery',
       contact: 'Contact Us',
       contactInfo: 'Contact Info',
-      phone: '+966 55 555 5555',
-      email: 'info@alsalem.com',
+      phone: '+966 505 282 955',
+      email: 'info@watamglass.com',
       address: 'Riyadh, Saudi Arabia',
       hours: 'Working Hours',
       weekdays: 'Saturday - Thursday: 9AM - 9PM',
@@ -57,11 +57,12 @@ const Footer = () => {
             <h3>{t.about}</h3>
             <p className="footer-about">{t.aboutText}</p>
             <div className="social-links">
-              <a href="/" className="social-link"><i className="fab fa-facebook-f"></i></a>
-              <a href="/" className="social-link"><i className="fab fa-twitter"></i></a>
-              <a href="/" className="social-link"><i className="fab fa-instagram"></i></a>
-              <a href="/" className="social-link"><i className="fab fa-linkedin-in"></i></a>
-              <a href="/" className="social-link"><i className="fab fa-youtube"></i></a>
+              <a href="https://facebook.com/watamglass" target='_blank' className="social-link"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/watamglass" target='_blank' className="social-link"><i className="fab fa-x"></i></a>
+              <a href="https://instagram.com/watamglass" target='_blank' className="social-link"><i className="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/watam-auto-glass-592393348/" target='_blank' className="social-link"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://snapchat.com/@watamglass" target='_blank' className="social-link"><i className="fab fa-snapchat"></i></a>
+              <a href="https://tiktok.com/@watamglass" target='_blank' className="social-link"><i className="fab fa-tiktok"></i></a>
             </div>
           </div>
 

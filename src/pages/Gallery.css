@@ -1,5 +1,5 @@
 .gallery-hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--secondary-green2), var(--primary-green));
   color: white;
   text-align: center;
   padding: 60px 0;
@@ -11,6 +11,7 @@
 
 .gallery-hero .section-title::after {
   background: white;
+  display: none;
 }
 
 .gallery-hero .section-subtitle {
@@ -46,9 +47,9 @@
 }
 
 .tab-btn.active {
-  background: var(--primary-color);
+  background: var(--primary-green);
   color: white;
-  border-color: var(--secondary-color);
+  border-color: var(--primary-gold);
 }
 
 .gallery-grid {
@@ -141,7 +142,7 @@
   width: 50px;
   height: 50px;
   border: none;
-  background: var(--secondary-color);
+  background: var(--primary-gold);
   color: white;
   border-radius: 50%;
   cursor: pointer;
@@ -154,7 +155,7 @@
 }
 
 .view-btn:hover {
-  background: var(--primary-color);
+  background: var(--primary-green);
   transform: rotate(90deg);
 }
 
@@ -170,7 +171,7 @@
 .no-images i {
   font-size: 4rem;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--primary-green);
   opacity: 0.5;
 }
 
@@ -234,7 +235,7 @@
 }
 
 .lightbox-close:hover {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   transform: scale(1.1);
 }
 
@@ -259,7 +260,7 @@
 }
 
 .lightbox-nav:hover {
-  background: var(--secondary-color);
+  background: var(--primary-gold);
   transform: translateY(-50%) scale(1.1);
 }
 

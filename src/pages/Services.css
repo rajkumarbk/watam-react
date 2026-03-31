@@ -1,9 +1,9 @@
 /* pages/Services.css */
 .services-hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--secondary-green2), var(--primary-green));
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .services-hero .section-title {
@@ -12,6 +12,7 @@
 
 .services-hero .section-title::after {
   background: white;
+  display: none;
 }
 
 .services-hero .section-subtitle {
@@ -45,7 +46,7 @@
 }
 
 .service-header {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to bottom, var(--primary-green), var(--secondary-green2));
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -54,7 +55,7 @@
 .service-icon {
   width: 70px;
   height: 70px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--primary-gold);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -92,7 +93,7 @@
 }
 
 .service-features li i {
-  color: var(--success-color);
+  color: var(--secondary-green1);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
@@ -110,22 +111,9 @@
   flex-direction: column;
 }
 
-.price-label {
-  font-size: 0.85rem;
-  color: var(--gray-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.price-value {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
 .service-btn {
   padding: 10px 25px;
-  background: var(--secondary-color);
+  background: var(--primary-gold);
   color: white;
   border: none;
   border-radius: 50px;
@@ -135,7 +123,7 @@
 }
 
 .service-btn:hover {
-  background: var(--primary-color);
+  background: var(--primary-green);
   transform: scale(1.05);
 }
 

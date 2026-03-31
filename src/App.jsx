@@ -29,7 +29,7 @@ function App() {
   );
 
   useEffect(() => {
-    document.title = language === 'ar' ? 'السالم لزجاج السيارات' : 'AlSalem Auto Glass';
+    document.title = language === 'ar' ? 'وتم لزجاج السيارات' : 'Watam Auto Glass';
   }, [language]);
 
   const toggleLanguage = () => {

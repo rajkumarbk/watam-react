@@ -1,8 +1,8 @@
 .contact-hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--secondary-green2), var(--primary-green));
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .contact-hero .section-title {
@@ -11,6 +11,7 @@
 
 .contact-hero .section-title::after {
   background: white;
+  display: none;
 }
 
 .contact-hero .section-subtitle {
@@ -36,7 +37,7 @@
 }
 
 .contact-form-wrapper h2 {
-  color: var(--primary-color);
+  color: var(--primary-green);
   margin-bottom: 30px;
   font-size: 1.8rem;
 }
@@ -64,7 +65,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--primary-green);
   background: white;
 }
 
@@ -99,7 +100,7 @@
 }
 
 .contact-info-card h3 {
-  color: var(--primary-color);
+  color: var(--primary-green);
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
@@ -115,18 +116,34 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  color: white;
+
 }
 
 .info-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   font-size: 1.2rem;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: var(--primary-gold);
+}
+
+.info-icon i,
+.info-icon svg {
+  color: white !important;
 }
 
 .info-details {
@@ -148,7 +165,7 @@
 }
 
 .contact-social h4 {
-  color: var(--primary-color);
+  color: var(--primary-green);
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
@@ -166,14 +183,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--primary-green);
   font-size: 1.2rem;
   transition: var(--transition);
   text-decoration: none;
 }
 
 .social-icon:hover {
-  background: var(--primary-color);
+  background: var(--primary-green);
   color: white;
   transform: translateY(-3px);
 }

@@ -1,8 +1,8 @@
 .branches-hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--secondary-green2), var(--primary-green));
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .branches-hero .section-title {
@@ -11,6 +11,7 @@
 
 .branches-hero .section-title::after {
   background: white;
+  display: none;
 }
 
 .branches-hero .section-subtitle {
@@ -42,7 +43,7 @@
 }
 
 .branch-header {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to bottom, var(--primary-green), var(--secondary-green2));
   color: white;
   padding: 20px;
   display: flex;
@@ -84,7 +85,7 @@
 }
 
 .info-item i {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   font-size: 1.2rem;
   width: 25px;
   margin-top: 3px;
@@ -105,7 +106,7 @@
 }
 
 .hours-details .friday {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   font-weight: 600;
 }
 
@@ -131,23 +132,52 @@
 }
 
 .call-btn {
-  background: var(--success-color);
+  background: var(--primary-gold);
   color: white;
 }
 
 .call-btn:hover {
-  background: #21867a;
+  background: var(--secondary-gold1);
   transform: translateY(-2px);
 }
 
 .direction-btn {
-  background: var(--primary-color);
+  background: var(--secondary-green1);
   color: white;
 }
 
 .direction-btn:hover {
-  background: #0d3a6f;
+  background: var(--secondary-green2);
   transform: translateY(-2px);
+}
+
+.branch-card.coming-soon {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.coming-soon-message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: var(--primary-green);
+}
+
+.coming-soon-message i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--primary-gold);
+}
+
+.coming-soon-message h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

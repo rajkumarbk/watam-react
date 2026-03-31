@@ -158,7 +158,7 @@ const Contact = () => {
                     </div>
                     <div className="info-details">
                       <span className="info-label">{t.phone}</span>
-                      <span className="info-value">+966 55 555 5555</span>
+                      <span className="info-value">+966 505 282 955</span>
                     </div>
                   </div>
 
@@ -168,7 +168,7 @@ const Contact = () => {
                     </div>
                     <div className="info-details">
                       <span className="info-label">{t.email}</span>
-                      <span className="info-value">info@alsalem.com</span>
+                      <span className="info-value">info@watamglass.com</span>
                     </div>
                   </div>
 
@@ -191,11 +191,12 @@ const Contact = () => {
                 <div className="contact-social">
                   <h4>{t.socialMedia}</h4>
                   <div className="social-icons">
-                    <a href="/" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-                    <a href="/" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    <a href="/" className="social-icon"><i className="fab fa-instagram"></i></a>
-                    <a href="/" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
-                    <a href="/" className="social-icon"><i className="fab fa-youtube"></i></a>
+                    <a href="https://facebook.com/watamglass" target='_blank' className="social-icon"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/watamglass" target='_blank' className="social-icon"><i className="fab fa-x"></i></a>
+                    <a href="https://instagram.com/watamglass" target='_blank' className="social-icon"><i className="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/watam-auto-glass-592393348/" target='_blank' className="social-icon"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://snapchat.com/@watamglass" target='_blank' className="social-icon"><i className="fab fa-snapchat"></i></a>
+                    <a href="https://tiktok.com/@watamglass" target='_blank' className="social-icon"><i className="fab fa-tiktok"></i></a>
                   </div>
                 </div>
               </div>

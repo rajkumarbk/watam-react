@@ -1,8 +1,8 @@
 .hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600') center/cover;
+  height: 97vh;
+  background: url('../assets/images/hero.jpg') center/cover no-repeat;
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(26, 75, 140, 0.8) 0%, rgba(230, 57, 70, 0.8) 100%);
+  /* background: linear-gradient(135deg, rgba(26, 75, 140, 0.8) 0%, rgba(230, 57, 70, 0.8) 100%); */
 }
 
 .hero-content {
@@ -86,7 +86,7 @@
 .feature-icon {
   width: 80px;
   height: 80px;
-  background: var(--primary-color);
+  background: var(--primary-gold);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -98,13 +98,13 @@
 }
 
 .feature-card:hover .feature-icon {
-  background: var(--secondary-color);
+  background: var(--secondary-green1);
   transform: rotateY(180deg);
 }
 
 .feature-card h3 {
   margin-bottom: 15px;
-  color: var(--primary-color);
+  color: var(--secondary-green1);
 }
 
 .feature-card p {
@@ -129,12 +129,12 @@
   padding: 30px;
   border-radius: 15px;
   transition: var(--transition);
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--secondary-green1);
 }
 
 .rtl .faq-item {
   border-left: none;
-  border-right: 4px solid var(--primary-color);
+  border-right: 4px solid var(--secondary-green1);
 }
 
 .faq-item:hover {
@@ -154,12 +154,12 @@
 }
 
 .faq-question i {
-  color: var(--secondary-color);
+  color: var(--primary-gold);
   font-size: 1.5rem;
 }
 
 .faq-question h3 {
-  color: var(--primary-color);
+  color: var(--secondary-green1);
   font-size: 1.2rem;
 }
 

@@ -34,7 +34,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--primary-green);
   letter-spacing: 1px;
 }
 
@@ -47,8 +47,8 @@
 .nav-link {
   text-decoration: none;
   color: var(--dark-color);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   transition: var(--transition);
   position: relative;
   padding: 5px 0;
@@ -61,7 +61,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--secondary-color);
+  background: var(--primary-gold);
   transition: var(--transition);
 }
 
@@ -77,14 +77,14 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
 .lang-switch {
   padding: 8px 20px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-green);
   background: transparent;
-  color: var(--primary-color);
+  color: var(--primary-green);
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -93,7 +93,7 @@
 }
 
 .lang-switch:hover {
-  background: var(--primary-color);
+  background: var(--primary-green);
   color: white;
 }
 
@@ -106,13 +106,13 @@
   cursor: pointer;
   padding: 5px;
   font-size: 24px;
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
 .menu-toggle span {
   width: 30px;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--primary-green);
   border-radius: 3px;
   transition: var(--transition);
 }
