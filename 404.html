@@ -1,16 +1,13 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image" href="../src/assets/images/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watam Auto Glass</title>
+<meta charset="utf-8">
+<title>Redirect</title>
+<script>
+  // Redirect all 404 routes to index.html
+  var path = window.location.pathname;
+  window.location.replace("/?redirect=" + path);
+</script>
 </head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="../src/main.jsx"></script>
-</body>
-
+<body></body>
 </html>
